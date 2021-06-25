@@ -185,6 +185,8 @@ def main():
                     player1.angle = (player1.angle-1)%360
                 elif event.key == K_DOWN:
                     player1.speed = [0,0]
+                elif event.key == K_SPACE:
+                    player1.shoot()
         #        elif event.key == K_ESCAPE:
         #            sys.exit(0)
             elif event.type == pygame.KEYUP:
